@@ -16,6 +16,7 @@
 */ /*! tailwindcss v2.0.4 | MIT License | https://tailwindcss.com
 
 */ /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+
 *,
 *::before,
 *::after {
@@ -29,6 +30,8 @@
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -429,8 +432,9 @@ select {
 }
 .container {
   width: 100%;
+  overflow-x: hidden;
 }
-@media (min-width: 640px) {
+/* @media (min-width: 640px) {
   .container {
     max-width: 640px;
   }
@@ -729,7 +733,7 @@ select {
   .container {
     max-width: 1536px;
   }
-}
+} */
 .space-y-reverse > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 1;
 }
@@ -2207,7 +2211,7 @@ select {
   overflow-y: visible;
 }
 .overflow-x-scroll {
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 .overflow-y-scroll {
   overflow-y: scroll;
